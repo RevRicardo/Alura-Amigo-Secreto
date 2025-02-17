@@ -92,6 +92,10 @@ body {
     justify-content: center;
 }
 
+.texto__paragrafo {
+    font-size: 15px;
+}
+
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;
