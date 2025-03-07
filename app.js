@@ -17,25 +17,32 @@ if (nomeDosAmigos.length < 1) {
 }
 
 function adicionarAmigo() {
-    let nomeAcrescentado = document.querySelector('input').value;
+    let input = document.getElementById("amigo");
+    let nome = input.value.trim();
+    let lista = document.getElementById("lista-amigos");
 
-    if (nomeAcrescentado.trim() === "") {
+    if (nome === "") {
         alert("O campo nome não pode estar vazio.");
-    } else {
-        nomeDosAmigos.push(nomeAcrescentado);
-        exibirTextoNaTela('h2', 'Acrescente o nome dos sesus amigos');
-        atualizarNumeroLimite();
-        console.log(`${nomeDosAmigos .length} ${nomeAcrescentado}`);
-
-        // Criar um novo item de lista numerada e adicioná-lo à lista de amigos
-        let listaAmigos = document.getElementById('lista-amigos');
-        let novoItem = document.createElement('li');
-        novoItem.textContent = `${nomeAcrescentado}`;
-        listaAmigos.appendChild(novoItem);
-
-        // Limpar o campo de entrada após adicionar o nome
-        document.getElementById('amigo').value = "";
+        return;
     }
+
+    if (nomeDosAmigos.includes(nome)) {
+        alert("Esse nome já foi inserido.");
+        return;
+    }
+
+    nomeDosAmigos.push(nome);
+    exibirTextoNaTela('h2', 'Acrescente o nome dos seus amigos');
+    atualizarNumeroLimite();
+    console.log(`${nomeDosAmigos.length} ${nome}`);
+
+    // Criar um novo item de lista numerada e adicioná-lo à lista de amigos
+    let novoItem = document.createElement('li');
+    novoItem.textContent = `${nome}`;
+    lista.appendChild(novoItem);
+
+    // Limpar o campo de entrada após adicionar o nome
+    input.value = "";
 }
 
 function sortearAmigo() {
