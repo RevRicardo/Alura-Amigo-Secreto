@@ -13,7 +13,7 @@ function atualizarNumeroLimite() {
 if (nomeDosAmigos.length < 1) {
     exibirTextoNaTela('h2', 'Acrescente primeiro o seu nome');
 } else {
-    exibirTextoNaTela('h2', 'Acrescente o nome dos sesus amigos');
+    exibirTextoNaTela('h2', 'Acrescente o nome dos seus amigos');
 }
 
 function adicionarAmigo() {
@@ -25,6 +25,15 @@ function adicionarAmigo() {
         alert("O campo nome não pode estar vazio.");
         return;
     }
+
+    let regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
+    if (!regex.test(nome)) {
+        alert("O nome deve conter apenas letras, acentos e espaços.");
+        return;
+    }
+
+    // Formata o nome para ter a primeira letra maiúscula
+    nome = nome.charAt(0).toUpperCase() + nome.slice(1).toLowerCase();
 
     if (nomeDosAmigos.includes(nome)) {
         alert("Esse nome já foi inserido.");
