@@ -13,18 +13,13 @@
 
 ## Instalação
 
-Clone 
+- Clone este repositório: https://github.com/RevRicardo/Alura-Amigo-Secreto.git
 
-Clone este repositório: https://github.com/RevRicardo/Alura-Amigo-Secreto.git
+## Como Executar:
 
-Como Executar:
+- Abrir o arquivo index.html no navegador.
+- Adicionar participantes - click em "Adicionar".
+- Para sortear seu amigo secreto – click em "Sortear amigo".
 
-Abrir o arquivo index.html no navegador.
-
-Adicionar participantes - click em "Adicionar".
-
-Para sortear seu amigo secreto – click em "Sortear amigo".
-
-Esse projeto foi desenvolvido por Ricardo Gomes Barbosa Lacerda como tarefa para o curso da Alura e ONE.
-
+### Esse projeto foi desenvolvido por Ricardo Gomes Barbosa Lacerda como tarefa para o curso da Alura e ONE.
 (Amigo-Secreto-Challenge-One)
