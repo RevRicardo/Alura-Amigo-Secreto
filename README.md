@@ -2,8 +2,10 @@ Projeto
 * Programa Iniciante em Programação G8 – ONE - Challenge Amigo Secreto - (HTML, CSS e JavaScript).
 
 Funcionalidades
-Adicionar participantes começando com o seu nome primeiro. 
+Adicionar participantes começando com o seu nome primeiro.
+
 Não aceita caracteres especiais, apenas acentos e espaços.
+
 Cria uma lista de nomes sendo os mesmos numerados.
 Nomes são armazenados sempre com a primeira letra maiúscula.
 Não permite que nomes sejam duplicados.
